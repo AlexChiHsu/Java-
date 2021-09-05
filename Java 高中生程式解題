@@ -1,0 +1,23 @@
+//a004. 文文的求婚
+
+import java.util.Scanner;
+public class a004{
+public static void main(String[] args){
+Scanner cin = new Scanner(System.in);
+int cout;
+//西元年被4整除且不被100整除，或被400整除者即為閏年
+while(cin.hasNextInt()){
+
+cout=cin.nextInt();
+if(cout%4==0 && cout%100!=0 || cout%400==0)
+System.out.println("閏年");
+
+else
+System.out.println("平年");
+
+}
+
+}
+
+
+}
