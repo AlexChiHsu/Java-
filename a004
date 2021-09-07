@@ -1,0 +1,18 @@
+//西元年被4整除且不被100整除，或被400整除者即為閏年
+//使用 cin , cout 來進行輸入輸出
+import java.util.*;
+public class a004{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+int a;
+while(sc.hasNextInt()){
+a=sc.nextInt();
+if(a%4==0 && a%100!=0)
+System.out.println("閏年");
+else if(a%400==0)
+System.out.println("閏年");
+else
+System.out.println("平年");
+}
+}
+}
