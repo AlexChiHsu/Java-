@@ -1,0 +1,17 @@
+//請寫一個程式，讀入兩個數字，並求出它們的和。
+//每組輸入共一行，內含有兩個整數 a, b，以空白隔開，a, b絕對值皆小於 106。
+import java.util.*;
+
+public class a002{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+int a,b;
+while(sc.hasNextInt()){
+int tal=0;
+a=sc.nextInt();
+b=sc.nextInt();
+tal=a+b;
+System.out.println(tal);
+}
+}
+}
