@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class a001{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+String n;
+while(sc.hasNext()){
+n=sc.next();
+System.out.println("hello, "+n);
+}
+}
+}
