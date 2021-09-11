@@ -1,0 +1,31 @@
+import java.util.*;
+public class a215{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+        
+  int sum,t,n,m,tal = 0;
+  while(sc.hasNextInt())
+  {
+     
+      n = sc.nextInt();
+      m = sc.nextInt();
+      if((m - n) < 100000)
+      {
+          sum = 0;
+         for(t = 0; t <= m; t++)
+         {
+             sum = n + t;
+             tal += sum;
+          if(tal > m)
+          { 
+            t++;            
+            System.out.println(t);
+            tal = 0;
+            break;
+          } 
+        }
+        
+      }
+  }
+ }
+}
