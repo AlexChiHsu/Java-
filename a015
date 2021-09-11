@@ -1,0 +1,31 @@
+import java.util.*;
+public class a015{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  int i,j,c,d;
+  while(sc.hasNextInt())
+  {
+   i = sc.nextInt();
+   j = sc.nextInt();
+   String[][] a = new String[i][j];
+   
+   for(c = 0; c < i; i++)
+   {
+    for(d = 0; d < j; d++)
+    {
+     String e = sc.next();
+     a[c][d] = e;
+    }
+   }
+
+   for(d = 0; d < a[0].length; d++)
+   {
+    for(c = 0; c <a.length; c++)
+    {
+     System.out.print(a[d][c]+" ");
+    }
+    System.out.println();
+   }
+  }
+ }
+}
