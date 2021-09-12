@@ -1,0 +1,28 @@
+import java.util.*;
+public class a216{
+
+ public static void main(String[] args){
+  Scanner sc = new Scanner ( System.in );
+while(sc.hasNextInt())
+{    
+int x = sc.nextInt();
+System.out.println(f(x)+ " "+g(x));
+}
+}
+   
+    public static int f(int n){
+        if(n == 1)
+        {
+            return 1;
+        }
+        return n + f(n - 1);
+    }
+    
+    public static int g(int m){
+        if(m==1)
+        {
+            return 1;
+        }
+        return f(m) + g(m-1);
+    }
+  }
